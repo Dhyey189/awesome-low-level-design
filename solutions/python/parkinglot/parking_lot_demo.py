@@ -7,8 +7,8 @@ from truck import Truck
 class ParkingLotDemo:
     def run():
         parking_lot = ParkingLot.get_instance()
-        parking_lot.add_level(Level(1, 100))
-        parking_lot.add_level(Level(2, 80))
+        parking_lot.add_level(Level(1, 2, 1, 2))
+        parking_lot.add_level(Level(2, 2, 1, 2))
 
         car = Car("ABC123")
         truck = Truck("XYZ789")

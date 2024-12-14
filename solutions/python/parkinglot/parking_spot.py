@@ -2,9 +2,9 @@ from vehicle_type import VehicleType
 from vehicle import Vehicle
 
 class ParkingSpot:
-    def __init__(self, spot_number: int):
+    def __init__(self, spot_number: int, vehicle_type: int = VehicleType.CAR):
         self.spot_number = spot_number
-        self.vehicle_type = VehicleType.CAR  # Default vehicle type is CAR
+        self.vehicle_type = vehicle_type  # Default vehicle type is CAR
         self.parked_vehicle = None
 
     def is_available(self) -> bool:
